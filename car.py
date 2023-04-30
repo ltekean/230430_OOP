@@ -10,7 +10,7 @@ class Car():
             self.speed = 100
     
     def brake(self, brakes):
-        self.spped -= brakes
+        self.speed -= brakes
         if (self.speed <= 0):
             self.speed = 0
     

@@ -1,7 +1,7 @@
 import math
 
 class Shape:
-    def __init__(self) -> None:
+    def __init__(self):
         pass
     
     def get_area(self):
@@ -9,7 +9,7 @@ class Shape:
     
 
 class Circle(Shape):
-    def __init__(self, radius) -> None:
+    def __init__(self, radius):
         super().__init__()
         self.radius = radius
         
@@ -18,20 +18,10 @@ class Circle(Shape):
 
 
 class Rectangle(Shape):
-    def __init__(self, width, height) -> None:
+    def __init__(self, width, height):
         super().__init__()
         self.width = width
         self.height = height
         
     def get_area(self):
         return self.width * self.height
-    
-
-shape = Shape()
-print(shape.get_area())
-
-circle = Circle(20)
-print(circle.get_area())
-
-rectangle = Rectangle(20, 40)
-print(rectangle.get_area())

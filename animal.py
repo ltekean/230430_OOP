@@ -7,16 +7,12 @@ class Animal:
     def speak(self):
         pass
     
-class Dog(Animal):
-    def __init__(self, name, age, sound):
-        super().__init__(name, age, sound)       
+class Dog(Animal):      
     
     def speak(self):
         return '멍멍'
 
 class Cat(Animal):
-    def __init__(self, name, age, sound):
-        super().__init__(name, age, sound)
     
     def speak(self):
         return '야옹'
